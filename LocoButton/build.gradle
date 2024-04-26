@@ -47,7 +47,7 @@ afterEvaluate {
             from components.findByName(variant.name)
             groupId = "com.dcolazo"
             artifactId = "LocoButton"
-            version = "1.0.0"
+            version = "1.0.2"
         }
     }
 }

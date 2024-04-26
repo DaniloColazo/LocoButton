@@ -12,9 +12,13 @@ class LocoButton @JvmOverloads constructor(
     attrs: AttributeSet? = null,
     defStyle: Int = 0,
     defStyleRes: Int = 0
-) : LinearLayout(context, attrs, defStyle, defStyleRes){
+) : LinearLayout(context, attrs, defStyle, defStyleRes) {
 
     init {
+        init()
+    }
+
+    private fun init() {
         LayoutInflater.from(context).inflate(R.layout.loco_butn, this, true)
         val btn = findViewById<ImageButton>(R.id.locoBtn)
         btn.setOnClickListener {
